@@ -128,7 +128,6 @@ body{
     </div>
 
     <a class="download-btn"
-       id="downloadBtn"
        href="https://github.com/AppDowload/apk-download/releases/latest/download/CashApp.apk">
         Download APK
     </a>
@@ -138,20 +137,6 @@ body{
     </div>
 
 </div>
-
-<script>
-document.getElementById("downloadBtn").addEventListener("click", function(e) {
-    e.preventDefault();
-
-    this.innerText = "Sedang Mengunduh...";
-
-    const link = this.href;
-
-    setTimeout(function() {
-        window.location.href = link;
-    }, 300);
-});
-</script>
 
 </body>
 </html>
